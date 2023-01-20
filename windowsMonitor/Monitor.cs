@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-
+using System.Threading.Tasks;
 public class Monitor
 {
     static void Main(string[] args)
@@ -10,8 +10,7 @@ public class Monitor
             Console.WriteLine("Usage: [process name] [max lifetime (minutes)] [monitoring frequency (minutes)]");
             return;
         }
-
-    
+        
         string processName = args[0];
 
         int timeOut;
@@ -37,15 +36,26 @@ public class Monitor
             return;
         }
 
+        Task.Run(() =>
+        {
+            while (true)
+            {
+                var key = Console.ReadKey(true);
+                if (key.Key == ConsoleKey.Q)
+                {
+                    Console.WriteLine("Stopping utility... ");
+                    Environment.Exit(0);
+                }
+            }
+        });
 
         while (true)
         {
             Thread.Sleep(timeToCheck * 60000);
          // Console.WriteLine("Checking if {0} is open", processName); //Debug Line
             ProcessKiller(processName, timeOut);
-
         }
-        
+
     }
 
      public static void ProcessKiller(string processName, int timeOut)

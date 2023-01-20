@@ -1,11 +1,1 @@
-19/01/2023 17:58:02 - notepad process with ID 17376 has been killed.
-19/01/2023 18:05:34 - notepad process with ID 29928 has been killed.
-19/01/2023 18:09:59 - notepad process with ID 28468 has been killed.
-19/01/2023 18:14:56 - notepad process has been killed.
-19/01/2023 18:14:56 - notepad process has been killed.
-19/01/2023 18:16:56 - notepad process has been killed.
-19/01/2023 18:18:56 - notepad process has been killed.
-19/01/2023 19:20:03 - notepad process has been killed.
-19/01/2023 19:25:29 - notepad process has been killed.
-19/01/2023 19:27:29 - notepad process has been killed.
-19/01/2023 19:29:29 - notepad process has been killed.
+
