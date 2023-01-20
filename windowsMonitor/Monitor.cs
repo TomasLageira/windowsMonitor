@@ -43,6 +43,7 @@ public class Monitor
             Thread.Sleep(timeToCheck * 60000);
          // Console.WriteLine("Checking if {0} is open", processName); //Debug Line
             ProcessKiller(processName, timeOut);
+
         }
         
     }
